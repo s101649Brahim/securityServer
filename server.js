@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 var jwt = require("express-jwt");
 var jwks = require("jwks-rsa");
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
