@@ -19,7 +19,7 @@ var corsOptions = {
   credentials: true
 };
 
-app.use(cors(originsWhitelist));
+app.use(cors());
 
 var jwtCheck = jwt({
   secret: jwks.expressJwtSecret({
